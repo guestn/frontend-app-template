@@ -1,4 +1,4 @@
-@import './spacing-mixins.scss';
+@use './spacing-mixins.scss' as *;
 
 :root {
   /* Spacing system based on 8px grid */

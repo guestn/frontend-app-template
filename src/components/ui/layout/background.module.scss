@@ -1,8 +1,7 @@
 .background {
   min-height: 100vh;
-  background-color: var(--color-background-secondary);
 }
 
 .default {
-  background-color: var(--color-background-primary);
+  background: url('/images/background/bg.webp') no-repeat center center;
 }
