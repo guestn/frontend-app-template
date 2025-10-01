@@ -1,0 +1,25 @@
+{
+  "HEADER": {
+    "TITLE": "App Template"
+  },
+  "NAV": {
+    "HOME": "Home",
+    "BADGES": {
+      "NEW": "New"
+    },
+    "COPYRIGHT": "Copyright © 2020 - {{year}} by {{company}}. All rights reserved.",
+    "FOOTER": {
+      "HOME": "Home",
+      "TEMPLATE_LINK": "Template Link",
+      "PRIVACY_POLICY": "Privacy Policy",
+      "TERMS_OF_SERVICE": "Terms of Service",
+      "COOKIE_POLICY": "Cookie Policy"
+    }
+  },
+  "NOT_FOUND": {
+    "PAGE_NOT_FOUND": "Page not found",
+    "BACK": "Back",
+    "HOME": "Home",
+    "404": "404"
+  }
+}
