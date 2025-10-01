@@ -1,11 +1,11 @@
 // SCSS function for spacing - this makes spacing() work directly in CSS
 @function spacing($factor: 8) {
-  @return calc(#{$factor} * 0.125rem);
+  @return #{$factor * 0.125}rem;
 }
 
 // SCSS mixins for spacing (alternative approach)
 @mixin spacing($property, $factor: 8) {
-  #{$property}: calc(#{$factor} * 0.125rem);
+  #{$property}: spacing($factor);
 }
 
 // Common spacing mixins

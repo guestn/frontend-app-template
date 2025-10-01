@@ -21,15 +21,7 @@ export interface AppHeaderProps {
 
 export const AppHeader = forwardRef<HTMLElement, AppHeaderProps>(
   (
-    {
-      title,
-      logoSrc,
-      logoHref,
-      navItems,
-      selectedPathname,
-      isConnected,
-      className,
-    },
+    { title, logoSrc, logoHref, navItems, selectedPathname, className },
     ref,
   ) => {
     const navItemsList = navItems();
