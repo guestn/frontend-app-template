@@ -1,8 +1,8 @@
 .background {
   min-height: 100vh;
-  background-color: #f9fafb;
+  background-color: var(--color-background-secondary);
 }
 
 .default {
-  background-color: #ffffff;
+  background-color: var(--color-background-primary);
 }

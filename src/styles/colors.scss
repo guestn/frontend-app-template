@@ -1,0 +1,100 @@
+// Color system - CSS custom properties
+:root {
+  // Primary colors
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-primary-light: #dbeafe;
+  --color-primary-dark: #1e40af;
+
+  // Secondary colors
+  --color-secondary: #6b7280;
+  --color-secondary-hover: #374151;
+  --color-secondary-light: #f3f4f6;
+  --color-secondary-dark: #111827;
+
+  // Success colors
+  --color-success: #10b981;
+  --color-success-hover: #059669;
+  --color-success-light: #d1fae5;
+  --color-success-dark: #047857;
+
+  // Error colors
+  --color-error: #ef4444;
+  --color-error-hover: #dc2626;
+  --color-error-light: #fee2e2;
+  --color-error-dark: #b91c1c;
+
+  // Warning colors
+  --color-warning: #f59e0b;
+  --color-warning-hover: #d97706;
+  --color-warning-light: #fef3c7;
+  --color-warning-dark: #92400e;
+
+  // Info colors
+  --color-info: #06b6d4;
+  --color-info-hover: #0891b2;
+  --color-info-light: #cffafe;
+  --color-info-dark: #0e7490;
+
+  // Neutral colors
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  // Background colors
+  --color-background-primary: var(--color-white);
+  --color-background-secondary: var(--color-gray-50);
+  --color-background-tertiary: var(--color-gray-100);
+  --color-background-overlay: rgba(0, 0, 0, 0.5);
+  --color-background-overlay-light: rgba(0, 0, 0, 0.2);
+  --color-background-translucent: rgba(255, 255, 255, 0.1);
+  --color-background-translucent-hover: rgba(255, 255, 255, 0.2);
+
+  // Text colors
+  --color-text-primary: var(--color-gray-900);
+  --color-text-secondary: var(--color-gray-600);
+  --color-text-tertiary: var(--color-gray-500);
+  --color-text-inverse: var(--color-white);
+  --color-text-link: #2a35bd;
+  --color-text-link-hover: #1e2a8a;
+
+  // Border colors
+  --color-border-primary: var(--color-gray-200);
+  --color-border-secondary: var(--color-gray-300);
+  --color-border-light: #e0e0e0;
+  --color-border-translucent: rgba(255, 255, 255, 0.2);
+
+  // Shadow colors
+  --color-shadow-primary: rgba(0, 0, 0, 0.1);
+  --color-shadow-secondary: rgba(0, 0, 0, 0.05);
+  --color-shadow-dark: rgba(0, 0, 0, 0.2);
+
+  // Skeleton/loading colors
+  --color-skeleton-primary: #f0f0f0;
+  --color-skeleton-secondary: #e0e0e0;
+
+  // Status colors (semantic)
+  --color-status-connected: var(--color-success);
+  --color-status-disconnected: var(--color-error);
+  --color-status-pending: var(--color-warning);
+  --color-status-info: var(--color-info);
+}
+
+// Dark mode color overrides (for future implementation)
+@media (prefers-color-scheme: dark) {
+  :root {
+    // Override colors for dark mode when needed
+    // --color-background-primary: var(--color-gray-900);
+    // --color-text-primary: var(--color-gray-100);
+    // etc.
+  }
+}

@@ -30,44 +30,44 @@
   }
 
   &:focus-visible {
-    outline: 2px solid #3b82f6;
+    outline: 2px solid var(--color-primary);
     outline-offset: 2px;
   }
 }
 
 .primary {
-  background-color: #3b82f6;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
 
   &:hover:not(:disabled) {
-    background-color: #2563eb;
+    background-color: var(--color-primary-hover);
   }
 }
 
 .secondary {
-  background-color: #f3f4f6;
-  color: #374151;
+  background-color: var(--color-secondary-light);
+  color: var(--color-gray-700);
 
   &:hover:not(:disabled) {
-    background-color: #e5e7eb;
+    background-color: var(--color-gray-200);
   }
 }
 
 .cta {
-  background-color: #10b981;
-  color: white;
+  background-color: var(--color-success);
+  color: var(--color-text-inverse);
 
   &:hover:not(:disabled) {
-    background-color: #059669;
+    background-color: var(--color-success-hover);
   }
 }
 
 .translucent {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #374151;
+  background-color: var(--color-background-translucent);
+  color: var(--color-gray-700);
   backdrop-filter: blur(8px);
 
   &:hover:not(:disabled) {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--color-background-translucent-hover);
   }
 }

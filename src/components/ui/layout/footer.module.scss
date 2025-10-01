@@ -43,13 +43,13 @@
 }
 
 .link {
-  color: #6b7280;
+  color: var(--color-text-secondary);
   text-decoration: none;
   font-size: 0.875rem;
   transition: color 0.2s ease-in-out;
 
   &:hover {
-    color: #374151;
+    color: var(--color-gray-700);
   }
 }
 
@@ -64,15 +64,15 @@
   justify-content: center;
   width: 2rem;
   height: 2rem;
-  background-color: #e5e7eb;
+  background-color: var(--color-gray-200);
   border-radius: 50%;
-  color: #6b7280;
+  color: var(--color-text-secondary);
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    background-color: #3b82f6;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
   }
 }
 
@@ -97,12 +97,12 @@
 }
 
 .copyrightLink {
-  color: #6b7280;
+  color: var(--color-text-secondary);
   text-decoration: none;
   font-size: 0.875rem;
   transition: color 0.2s ease-in-out;
 
   &:hover {
-    color: #374151;
+    color: var(--color-gray-700);
   }
 }

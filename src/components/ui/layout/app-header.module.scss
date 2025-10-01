@@ -1,6 +1,6 @@
 .header {
-  background-color: white;
-  border-bottom: 1px solid #e5e7eb;
+  background-color: var(--color-background-primary);
+  border-bottom: 1px solid var(--color-border-primary);
   padding: 1rem 0;
   position: fixed;
   width: 100%;
@@ -35,7 +35,7 @@
 
 .navLink {
   text-decoration: none;
-  color: #6b7280;
+  color: var(--color-text-secondary);
   font-weight: 500;
   font-family:
     'Inter',
@@ -53,11 +53,11 @@
   transition: color 0.2s ease-in-out;
 
   &:hover {
-    color: #374151;
+    color: var(--color-gray-700);
   }
 
   &.active {
-    color: #3b82f6;
+    color: var(--color-primary);
   }
 }
 
@@ -81,12 +81,12 @@
   }
 
   .connected {
-    color: #10b981;
+    color: var(--color-status-connected);
     font-weight: 500;
   }
 
   .disconnected {
-    color: #ef4444;
+    color: var(--color-status-disconnected);
     font-weight: 500;
   }
 }

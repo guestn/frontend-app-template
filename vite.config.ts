@@ -23,7 +23,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@/styles/spacing-mixins.scss";`,
+        additionalData: `@import "@/styles/colors.scss"; @import "@/styles/spacing-mixins.scss";`,
       },
     },
   },
