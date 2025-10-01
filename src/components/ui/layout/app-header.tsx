@@ -1,5 +1,7 @@
-import { forwardRef } from 'react';
+import { forwardRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { HamburgerIcon } from '../icons/hamburger-icon';
+import { MobileMenu } from './mobile-menu';
 import styles from './app-header.module.scss';
 
 export interface NavItem {
@@ -31,37 +33,53 @@ export const AppHeader = forwardRef<HTMLElement, AppHeaderProps>(
     ref,
   ) => {
     const navItemsList = navItems();
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+      setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
+    const closeMobileMenu = () => {
+      setIsMobileMenuOpen(false);
+    };
 
     return (
-      <header ref={ref} className={`${styles.header} ${className || ''}`}>
-        <div className={styles.container}>
-          <NavLink to={logoHref} className={styles.logo}>
-            <img src={logoSrc} alt={title} />
-          </NavLink>
+      <>
+        <header ref={ref} className={`${styles.header} ${className || ''}`}>
+          <div className={styles.container}>
+            <NavLink to={logoHref} className={styles.logo}>
+              <img src={logoSrc} alt={title} />
+            </NavLink>
 
-          <nav className={styles.nav}>
-            {navItemsList.map((item) => (
-              <NavLink
-                key={item.pathname}
-                to={item.pathname}
-                className={`${styles.navLink} ${
-                  selectedPathname === item.pathname ? styles.active : ''
-                }`}
-              >
-                {item.label}
-              </NavLink>
-            ))}
-          </nav>
+            <nav className={styles.nav}>
+              {navItemsList.map((item) => (
+                <NavLink
+                  key={item.pathname}
+                  to={item.pathname}
+                  className={`${styles.navLink} ${
+                    selectedPathname === item.pathname ? styles.active : ''
+                  }`}
+                >
+                  {item.label}
+                </NavLink>
+              ))}
+            </nav>
 
-          <div className={styles.status}>
-            {isConnected ? (
-              <span className={styles.connected}>Connected</span>
-            ) : (
-              <span className={styles.disconnected}>Disconnected</span>
-            )}
+            <HamburgerIcon
+              isOpen={isMobileMenuOpen}
+              onClick={toggleMobileMenu}
+              className={styles.hamburger}
+            />
           </div>
-        </div>
-      </header>
+        </header>
+
+        <MobileMenu
+          isOpen={isMobileMenuOpen}
+          onClose={closeMobileMenu}
+          navItems={navItemsList}
+          selectedPathname={selectedPathname}
+        />
+      </>
     );
   },
 );

@@ -11,6 +11,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -21,7 +23,11 @@
 
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: spacing(8);
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .navLink {
@@ -67,6 +73,10 @@
     'Helvetica Neue',
     sans-serif;
 
+  @media (max-width: 767px) {
+    display: none;
+  }
+
   .connected {
     color: #10b981;
     font-weight: 500;
@@ -75,5 +85,11 @@
   .disconnected {
     color: #ef4444;
     font-weight: 500;
+  }
+}
+
+.hamburger {
+  @media (min-width: 768px) {
+    display: none;
   }
 }

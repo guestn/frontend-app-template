@@ -1,0 +1,59 @@
+.hamburgerIcon {
+  display: none; // Hidden by default, shown on mobile
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+
+  &:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 1023px) {
+    display: flex;
+  }
+}
+
+.hamburgerLine {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #374151;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+
+  &:first-child {
+    transform: rotate(0);
+  }
+
+  &:nth-child(2) {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  &:nth-child(3) {
+    transform: rotate(0);
+  }
+}
+
+.hamburgerLine.open {
+  &:first-child {
+    transform: rotate(45deg);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+}

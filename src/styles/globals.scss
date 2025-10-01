@@ -3,9 +3,9 @@
 html,
 body {
   margin: 0;
-  display: flex;
-  min-height: 100vh;
   padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden; // Prevent horizontal scroll
   font-family:
     'Inter',
     -apple-system,
@@ -27,9 +27,17 @@ body {
 }
 
 main {
-  width: 100vw;
+  width: 100%;
   min-height: calc(100vh - var(--app-footer-height) - var(--app-header-height));
   margin-top: var(--app-header-height);
+  overflow-x: hidden; // Prevent horizontal scroll
+}
+
+/* Ensure all containers respect viewport width */
+.container,
+.page-container {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 :root {

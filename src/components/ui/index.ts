@@ -20,6 +20,7 @@ export { AppHeader } from './layout/app-header';
 export { Background, BackgroundVariant } from './layout/background';
 export { Footer, FooterVariant } from './layout/footer';
 export type { FooterLinksGroup } from './layout/footer';
+export { MobileMenu } from './layout/mobile-menu';
 
 // Provider components
 export { I18nProvider, resolvedLocale } from './providers/i18n-provider';
@@ -37,3 +38,4 @@ export {
   TelegramIcon,
   MediumIcon,
 } from './icons/social-icons';
+export { HamburgerIcon } from './icons/hamburger-icon';
