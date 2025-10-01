@@ -2,13 +2,13 @@ import { FC } from 'react';
 import ReactGA from 'react-ga4';
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { AppFooter } from '@/components/domain/app-footer/app-footer';
 import {
   AppHeader,
   Background,
   BackgroundVariant,
   RouterProvider,
-} from '@pufferfinance/puffer-ui-components';
-import { AppFooter } from '@/components/domain/app-footer/app-footer';
+} from './components/ui';
 import { navItems } from './pages/lib/nav-items';
 import { policyRoutes } from './pages/lib/routes';
 import { env } from './utils/env';
@@ -30,12 +30,12 @@ export const App: FC = () => {
 
   return (
     <RouterProvider navigate={navigate}>
-      <Background variant={BackgroundVariant.Illustrated}>
+      <Background variant={BackgroundVariant.Default}>
         <AppHeader
           title={t('HEADER.TITLE')}
           logoSrc="https://placehold.co/100x50"
           logoHref="/"
-          navItems={() => headerNavItems}
+          navItems={() => Object.values(headerNavItems)}
           selectedPathname={pathname}
           isConnected={false}
           className="app-header"

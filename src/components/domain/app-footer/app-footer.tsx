@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
-import { Footer, FooterVariant } from '@pufferfinance/puffer-ui-components';
+import { Footer, FooterVariant } from '@/components/ui/layout/footer';
 import { navItems } from '@/pages/lib/nav-items';
 import { socialLinks } from '@/pages/lib/social-links';
 import { footerLinks } from '@/pages/lib/footer-links';

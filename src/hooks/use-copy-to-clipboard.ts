@@ -1,7 +1,4 @@
-import {
-  MessageBannerVariant,
-  useToastContext,
-} from '@pufferfinance/puffer-ui-components';
+import { MessageBannerVariant, useToastContext } from '../components/ui';
 import { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 

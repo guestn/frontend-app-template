@@ -1,7 +1,7 @@
 import { RenderOptions, RenderResult, render } from '@testing-library/react';
 import { ReactElement, ReactNode } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ToastProvider } from '@pufferfinance/puffer-ui-components';
+import { ToastProvider } from '../components/ui';
 import { BrowserRouter } from 'react-router-dom';
 import { SWRProvider } from '@/context/swr-provider/swr-provider';
 

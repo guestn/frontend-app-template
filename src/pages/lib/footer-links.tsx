@@ -1,4 +1,4 @@
-import { FooterLinksGroup } from '@pufferfinance/puffer-ui-components';
+import { FooterLinksGroup } from '../../components/ui';
 import { TFunction } from 'i18next';
 
 export const footerLinks: (t: TFunction) => FooterLinksGroup[] = (t) => [

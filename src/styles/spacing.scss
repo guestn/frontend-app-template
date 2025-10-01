@@ -1,0 +1,15 @@
+@import './spacing-mixins.scss';
+
+:root {
+  /* Spacing system based on 8px grid */
+  --spacing-xs: calc(2 * 0.125rem); /* 4px */
+  --spacing-sm: calc(4 * 0.125rem); /* 8px */
+  --spacing-md: calc(8 * 0.125rem); /* 16px */
+  --spacing-lg: calc(12 * 0.125rem); /* 24px */
+  --spacing-xl: calc(16 * 0.125rem); /* 32px */
+  --spacing-2xl: calc(24 * 0.125rem); /* 48px */
+  --spacing-3xl: calc(32 * 0.125rem); /* 64px */
+
+  /* Dynamic spacing function */
+  --spacing: calc(var(--spacing-factor, 8) * 0.125rem);
+}

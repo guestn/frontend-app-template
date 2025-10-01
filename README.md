@@ -4,7 +4,7 @@ This is a template for developer frontend apps.
 
 ## Setup
 
-To complete the setup, make sure to add the `NPM_TOKEN` environment variable to your GitHub Actions secrets to be able to install Puffer private packages in the CI/CD pipeline.
+To complete the setup, make sure to add the `NPM_TOKEN` environment variable to your GitHub Actions secrets to be able to install private packages in the CI/CD pipeline.
 
 ## Getting started
 

@@ -6,7 +6,7 @@ import {
   PageContainer,
   NotFound,
   NotFoundActions,
-} from '@pufferfinance/puffer-ui-components';
+} from '../../components/ui';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { Head } from '@/components/ui/head/head';

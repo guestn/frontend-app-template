@@ -1,8 +1,8 @@
 import { renderHook, act } from '@testing-library/react';
-import { useToastContext } from '@pufferfinance/puffer-ui-components';
+import { useToastContext } from '../../components/ui';
 import { useCopyToClipboard } from '../use-copy-to-clipboard';
 
-jest.mock('@pufferfinance/puffer-ui-components', () => ({
+jest.mock('../../components/ui', () => ({
   useToastContext: jest.fn(),
   MessageBannerVariant: {
     Warning: 'warning',
