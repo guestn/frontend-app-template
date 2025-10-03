@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { marked } from 'marked';
-import { Skeleton } from '../components/ui';
 import { Head } from '@/components/ui/head/head';
 import { useAsync } from '@/hooks/use-async';
+import { Skeleton } from '@/components/ui';
 import styles from '@/styles/markdown.module.scss';
 
 const TERMS_OF_SERVICE_DOC =

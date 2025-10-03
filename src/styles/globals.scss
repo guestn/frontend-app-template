@@ -7,21 +7,21 @@ body {
   min-height: 100vh;
   overflow-x: hidden; // Prevent horizontal scroll
   font-family:
-    'Inter',
+    Inter,
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
     'Fira Sans',
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
   font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
   font-variation-settings: normal;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

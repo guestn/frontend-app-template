@@ -1,6 +1,7 @@
 import { FC } from 'react';
-import { Container, Heading, Text, TextVariant } from '../../components/ui';
+
 import styles from './home-page.module.scss';
+import { Container, Heading, Text, TextVariant } from '../../components/ui';
 
 export const HomePage: FC = () => {
   return (

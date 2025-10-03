@@ -51,8 +51,6 @@ Environment variables are stored in the `.env` file and should be prefixed with 
 
 ## Release
 
-
-
 ## Project directory structure
 
 ### Top Level
@@ -102,12 +100,10 @@ Environment variables are stored in the `.env` file and should be prefixed with 
 The application implements a hierarchical feature flag system that allows dynamic feature toggling through multiple configuration layers. Feature flags can be enabled through the following methods, listed in order of precedence (highest to lowest):
 
 1. **Query Parameters**
-
    - Format: `?feature_FEATURE_ID=true`
    - Example: `https://dummy.com/?feature_EXAMPLE_FEATURE=true`
 
 2. **Browser Local Storage**
-
    - Key format: `feature_FEATURE_ID`
    - Example: `feature_EXAMPLE_FEATURE: true`
 

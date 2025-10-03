@@ -1,4 +1,7 @@
 import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
+import { Head } from '@/components/ui/head/head';
 import {
   Button,
   ButtonVariant,
@@ -7,9 +10,6 @@ import {
   NotFound,
   NotFoundActions,
 } from '../../components/ui';
-import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
-import { Head } from '@/components/ui/head/head';
 import { navItems } from '../lib/nav-items';
 import styles from './not-found-page.module.scss';
 

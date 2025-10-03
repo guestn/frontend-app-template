@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react';
 import { env } from '@/utils/env';
-import { useFeatureService, getFeatureValue } from '../feature-service';
 import { FEATURE_FLAGS } from '../../features/feature-flags';
+import { useFeatureService, getFeatureValue } from '../feature-service';
 import { FeatureSource } from '../types';
 
 jest.mock('@/utils/env', () => ({

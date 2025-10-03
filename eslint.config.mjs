@@ -11,7 +11,7 @@ import checkFile from 'eslint-plugin-check-file';
 export default tseslint.config(
   // JavaScript files
   {
-    files: ['**/*.{js,mjs,cjs}'],
+    files: ['**/*.js', '**/*.mjs', '**/*.cjs'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -19,7 +19,7 @@ export default tseslint.config(
   },
   // TypeScript files
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ['**/*.ts', '**/*.tsx'],
     ignores: ['dist/**', 'node_modules/**'],
     settings: {
       react: {
@@ -142,7 +142,20 @@ export default tseslint.config(
     },
   },
   {
-    files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+    files: [
+      '**/__tests__/**/*.js',
+      '**/__tests__/**/*.ts',
+      '**/__tests__/**/*.jsx',
+      '**/__tests__/**/*.tsx',
+      '**/*.spec.js',
+      '**/*.spec.ts',
+      '**/*.spec.jsx',
+      '**/*.spec.tsx',
+      '**/*.test.js',
+      '**/*.test.ts',
+      '**/*.test.jsx',
+      '**/*.test.tsx',
+    ],
     rules: {
       'react/jsx-props-no-spreading': 'off',
     },

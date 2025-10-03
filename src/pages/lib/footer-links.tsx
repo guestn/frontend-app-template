@@ -1,5 +1,5 @@
-import { FooterLinksGroup } from '../../components/ui';
 import { TFunction } from 'i18next';
+import { FooterLinksGroup } from '../../components/ui';
 
 export const footerLinks: (t: TFunction) => FooterLinksGroup[] = (t) => [
   {

@@ -1,10 +1,10 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { marked } from 'marked';
-import { Skeleton } from '../components/ui';
 import { Head } from '@/components/ui/head/head';
 import { useAsync } from '@/hooks/use-async';
 import styles from '@/styles/markdown.module.scss';
+import { Skeleton } from '../components/ui';
 
 const PRIVACY_POLICY_DOC =
   'https://raw.githubusercontent.com/a-doc/privacy-policy.md';
